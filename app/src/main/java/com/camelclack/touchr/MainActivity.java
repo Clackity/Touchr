@@ -9,12 +9,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
   private static final String KEY_NUM = "num";
 
-  private long num = 1;
+  private long num = 0;
 
   // Create an anonymous implementation of OnClickListener
   private View.OnClickListener mClickListener = new View.OnClickListener() {
     public void onClick(View v) {
-      num *= 10;
+      num += 1;
       showNum();
     }
   };
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView text = (TextView)findViewById(R.id.number);
     text.setOnClickListener(mClickListener);
+
+    showNum();
   }
 
 }

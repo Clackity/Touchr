@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class TextFitTextView extends TextView {
 
     static final String TAG = "TextFitTextView";
-    boolean fit = false;
+    boolean fit = true;
 
     public TextFitTextView(Context context) {
         super(context);
