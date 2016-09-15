@@ -10,8 +10,10 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     TextView text = (TextView)findViewById(R.id.number);
-    text.setText("1");
+    text.setText("0");
   }
 
-  
+  protected void onClickThing() {
+
+  }
 }
